@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Newsmarketing | Trang chủ</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+		<nav id="menu">
+  <ul>
+    <li><a href="index.html">Trang chủ</a></li>
+    <li><a href="newsportal">Tin tức</a></li>
+    <li><a href="intro.html">Giới thiệu</a></li>
+    <li>
+          <a href="ktvi.html">Sản phẩm</a>
+      <ul class="sub-menu">
+        <li><a href="ktvi.html" style="margin-left: -5px;">Kênh tivi thang máy</a></li>
+        <li><a href="kposter.html" style="margin-left: -5px;">Kênh poster thang máy</a></li>
+        <li><a href="ksanbay.html" style="margin-left: -5px;">Kênh led sân bay</a></li>
+        <li><a href="ksieuthi.html" style="margin-left: -5px;margin-bottom: -3px;">Kênh siêu thị</a></li>      
+     </ul>
+    </li>
+    <li><a href="contact.php">Liên hệ</a></li>
+    <a href=""><img src="images/Capture.PNG" width="145px" alt=""></a>
+  </ul>
+</nav>
+<a href="Newsportal/newsportal/admin/" title="Đăng nhập"><img src="images/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg" alt="" style="height: 70px;width: 70px;margin-bottom: -130px;"></a>
+	<div class="container">
+        <div class="slice">
+        	<img id="slider" src="../Newmarketing/images/Content-marketing-la-gi-1200x800.jpg" alt="">
+            <div class="left">
+                <a href="intro.html" class="btn">Learn more</a>
+            </div>
+        	<div class="right">
+        		<button onclick="prev()"><</button>
+                <button onclick="next()">></button>
+        	</div>
+        </div>
+        <script>
+ var images = [
+        "images/Immobilier-de-luxe-photographie-et-vidéo-par-Pixels-from-mars-8.png",
+        "images/Content-marketing-la-gi-1200x800.jpg",
+        "images/Social-media-5-1200x800.jpg"
+    ];
+    var num = 0;
+
+    function next() {
+        var slider = document.getElementById("slider");
+        num++;
+        if(num >= images.length) {
+            num = 0;
+        }
+        slider.src = images[num];
+    }
+
+    function prev() {
+        var slider = document.getElementById("slider");
+        num--;
+        if(num < 0) {
+            num = images.length-1;
+        }
+        slider.src = images[num];
+    }
+</script>
+        <div class="banner">
+        <a id="bannerLeft">
+                 <p class ="textL">Quảng cáo<strong> 
+                 chuyên nghiệp</strong></p>
+                 <p class ="view1">Tư vấn ngay</p>
+        </a>
+        <a id="bannerRight">
+                <p class = "textR"><strong>Sáng tạo
+                và phát triển</strong></p>
+                <p class ="view2">Tư vấn ngay</p>
+        </a>
+        </div>
+        <p id="title" style="
+              margin-top: 476px;
+              margin-bottom: 25px;
+              margin-left: 40px;
+             ">E <strong>- commerce</strong></p>
+        <div id="content1">
+                <h1 style="padding-left:125px"> Digital marketing </h1>
+                <a href="#"><img src="images/digital-marketing-2494222-2091669.png" alt=""></a>
+                <h2>Chúng tôi sử dụng các chiến lược doanh nghiệp để tăng thứ hạng tìm kiếm địa phương và trên toàn thế giới của bạn</h2>
+                <h3>* Dịch vụ Mobile SEO</h3>
+                <h4>* Dịch vụ Local SEO</h4>
+                <h5>* Dịch vụ Local SEO</h5>
+            </div>
+        <div id="content2">
+                <h1 style="padding-left:15px">Pay Per Click Advertising</h1>
+                <a href="#"><img src="images/online-marketing-2692819-2237889.png" alt=""></a>
+                <h2>Chúng tôi sử dụng các chiến lược doanh nghiệp để tăng thứ hạng tìm kiếm địa phương và trên toàn thế giới của bạn</h2>
+                <h3>* Giải thưởng Google</h3>
+                <h4>* Quảng cáo Mobile</h4>
+                <h5>* facebook, youtube</h5>
+            </div>
+        <div id="content3">
+                <h1 style="padding-left:15px">Contant Marketing</h1>
+                <a href="#"><img src="images/terms-condition-1795309-1522574.png" alt=""></a>
+                <h2>Chúng tôi sử dụng các chiến lược doanh nghiệp để tăng thứ hạng tìm kiếm địa phương và trên toàn thế giới của bạn</h2>
+                <h3>* Đổ trang contant</h3>
+                <h4>* Viết blog</h4>
+                <h5>* Infographics & Bloggers</h5>
+            </div>
+         <footer>
+        <div style="
+    margin-left: 48px;
+">Copyright © Newsmarketing 2020</div>
+    </footer>
+</body>
+</html>
